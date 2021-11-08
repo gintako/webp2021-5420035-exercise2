@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles/style.css" rel="stylesheet">
+        <meta charset="utr-8">
+        <title>My test page</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+  function createParagraph() {
+    let para = document.createElement('p');
+    para.textContent = 'ボタンが押されました!';
+    document.body.appendChild(para);
+  }
+
+  const buttons = document.querySelectorAll('button');
+
+  for(let i = 0; i < buttons.length ; i++) {
+    buttons[i].addEventListener('click', createParagraph);
+  }
+});
+        </script>
+    </head>
+    <body>
+        <h1>My favorite HTML elements</h1>
+            <h2>The head element</h2>
+              <h3>head elementとは</h3>  
+              <p>&lt;head&gt;はhtmlの最初の要素である。この&lt;head&gt;内のものは表示されないためCSSなどの
+                  スタイル指定するものや文字のエンコーディングの定義などを行う箇所である。
+              </p>
+              <h3>head elementの例</h3>
+              <img src="images/webプログラミング1-1.png">
+              <h3>head elementの実行結果</h3>
+              <img src="images/webプログラミング1-2.png">
+            
+
+            <h2>The title element</h2>
+              <h3>The title elementとは</h3>
+              <p>&lt;title&gt;はその文字の通りページのタイトルを指定するものである。ページを開いた際にタブに表示される
+                  タイトルを決めることができる。&lt;title&gt;はメタデータコンテンツに分類される。
+              </p>
+              <h3>title elementの例</h3>
+              <img src="images/webプログラミング1-1.png">
+              <h3>head elementの実行結果</h3>
+              <img src="images/webプログラミング2-2.png">
+
+            <h2>The base element</h2>
+              <h3>The base element</h3>
+              <p>これは&lt;head&gt;の中に指定する。リンク先に移動するためのURLの基準となるURLや、基準となるター
+                  ゲットウィンドウを指定します。
+            　</p>
+              <h3>base elementの例</h3>
+              <img src="images/webプログラミング3-1.png">
+              <h3>base elementの実行結果</h3>  
+              <img src="images/webプログラミング3-2.png"> 
+              
+
+              <p>日本大学文理学部情報科学科webプログラミングNo.2 report  5420035 山崎銀汰</p>
+    </body>
+</html>
+    
